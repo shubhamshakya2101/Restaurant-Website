@@ -1,0 +1,429 @@
+body{
+    background-color: #a8a59f;
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+
+header{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+
+.head{
+	float:left;
+	color: #fff;
+	margin-left: 10px;
+	padding-left: 60px;
+	font-size:20px;
+	font-family: "red serifs";
+
+}
+
+nav{
+	float: right;
+}
+
+
+.navbar{
+	
+	padding-right: 120px;
+    background-color: #322e2e;
+    box-shadow: -20px 20px 11px 4px black;
+    /* text-shadow: 9px 20px 6px white; */
+    /* text-shadow: 0 0 black; */
+    /*text-shadow: -8px 6px 5px white;*/
+    border-radius: 50px;
+}
+
+.navbar li{
+	display: inline-block;
+	padding: 1rem;
+	font-family: "robot";
+	 border-radius: 50px;
+    font-family: "robot", sans-serif;
+    /*background-color: #4f4c4b;*/
+}
+
+.navbar li a {
+	color: white;
+	text-decoration: none;
+	font-weight: none;
+	transition: 0.6s;
+
+}
+
+.navbar li a.active{
+	border: 1px solid black;
+	background-color: white;
+}
+
+.navbar li a:hover{
+	opacity: 1;
+	border:1px solid white;
+	
+	background-color: white;
+    color: #0d0d0d;
+    padding: 0.3rem;
+    border-radius: 50px;
+}
+
+.container{
+
+    padding-left: 200px;
+    padding-right: 274px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fffefe;
+	color: black;
+	width:70%;
+	
+	overflow: hidden;
+	margin-top: 1%;
+	margin-left: -1%;
+}
+
+showcase h1 {
+	
+    padding-left: 200px;
+    padding-right: 200px;
+ /*   padding-top: -70px;
+    padding-bottom: -70px;
+  */
+   
+	font-family: "woodcutter";
+	text-align: center;
+	background-color: #E91E63;
+    color: #fffefe;
+}
+
+showcase h3{
+	 background-color: #00BCD4;
+    padding: 10px;
+
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.category{
+
+	margin-top: 5%;
+	display: flex;
+	text-align: center;
+	font-family: cursive;
+}
+
+.category img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	transition: 0.6s ease;
+	overflow: hidden;
+    border: 3px solid white;
+
+
+}
+
+.category img:hover{
+	
+	border-radius: 5%;
+	opacity: 0.8;
+	transform: scale(1.2);
+	border: 3px solid black;
+}
+
+.thai2, .thai3{
+	padding-left: 1rem;
+
+}
+
+.foot img{
+ width:100%;
+ height:auto;
+}
+ 
+ 
+/********************************************** MENU CSS **************************************************************************/
+
+header {
+
+       width: 80%;
+	margin:auto;
+	overflow: hidden;	 
+ }
+ 
+
+  .menu-heading h1{padding-left: 200px;
+    padding-right: 200px;
+ /*   padding-top: -70px;
+    padding-bottom: -70px;
+  */
+   
+	font-family: "woodcutter";
+	text-align: center;
+	background-color: #E91E63;
+    color: #fffefe;
+}
+ 
+ .menu-heading h3{
+ 	 background-color: #00BCD4;
+    padding: 10px;
+
+	text-align: center;
+	letter-spacing: 2px;
+	color: white;
+	font-family:cursive;
+	font-size: 20px;
+ }
+
+.ratelist ul{
+	margin: 0;
+	padding: 10px 20px;
+	border: 1px dashed rgba(0,0,0,.5);
+	border-top: none;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+}
+
+.ratelist ul li{
+	list-style:none;
+	padding: 5px 0px;
+	font-size: 16px;
+}
+
+.ratelist ul li input [type="checkbox"]
+{
+	display: none;
+}
+
+.ratelist ul li span.list {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0 5px;
+	transition: 0.5s;
+}
+
+.ratelist ul li input[type="checkbox"]:checked~span.list{
+	color: #ccc;
+	transition-delay: 0s;
+}
+
+.ratelist ul li span.list:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+	background: #ff3663;
+	transition-delay: 0.5s;
+}
+
+.ratelist ul li input[type="checkbox"]:checked~span.list:before{
+	left: 100%;
+	transition-delay: 0s;
+}
+
+
+.ratelist ul li span.list:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	background: #000;
+	width: 100%;
+	height:2px;
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: 0.5s;
+	background: #ff3663;
+	transition-delay: 0s;
+}
+
+.ratelist ul li input[type="checkbox"]:checked~span.list:after{
+	transform: scaleX(1);
+	transition-delay: 0.5s;
+}
+
+.ratelist ul li span.icon{
+	position: relative;
+	top: -3px;
+	width: 18px;
+	height: 18px;
+	box-sizing: border-box;
+	border: 1px solid #262626;
+	display: inline-block; 
+	margin-right: 5px;
+	overflow:hidden; 
+}
+ 
+.ratelist ul li span.icon:before{
+	content: 'x';
+	position: absolute;
+	top:-5px;
+	left: 4px;
+	transform: translateY(-100%);
+	transition: 0.5s;
+
+}
+
+.ratelist ul li input[type="checkbox"]:checked~span.icon:before{
+	transform: translateY(0);
+}
+
+.foot2 img{
+	width: 100%;
+	height: 500px;
+}
+
+
+/*******************************************************************CATERING CSS **********************************************/
+
+header {
+
+       width: 80%;
+	margin:auto;
+	overflow: hidden;	 
+ }
+ 
+
+  .cate-heading h1{padding-left: 200px;
+    padding-right: 200px;
+ /*   padding-top: -70px;
+    padding-bottom: -70px;
+  */
+   
+	font-family: "woodcutter";
+	text-align: center;
+	background-color: #E91E63;
+    color: #fffefe;
+}
+ 
+ .cate-heading h2{
+ 	 background-color: #00BCD4;
+    padding: 10px;
+
+	text-align: center;
+	letter-spacing: 2px;
+	color: white;
+	font-family:cursive;
+	font-size: 20px;
+ }
+
+.cate-img img{
+	display: block;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.cate-para{
+	border-style: double 1px solid white;
+	text-align: center;
+	justify-content: center;
+	background-color:#C3AE15;
+}
+
+.cate-para h3{
+	color: white;
+	font-family: robot;
+	font-size: 25px;
+}
+
+.cate-para p{
+	color: white;
+}
+
+/*****************************************Contact css********************/
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/**********************************about css*******************/
+header {
+
+       width:100%;
+	margin:auto;
+	overflow: hidden;	 
+ }
+
+
+  .about-heading h1{padding-left: 200px;
+    padding-right: 200px;
+ /*   padding-top: -70px;
+    padding-bottom: -70px;
+  */
+   
+	font-family: "woodcutter";
+	text-align: center;
+	background-color: #E91E63;
+    color: #fffefe;
+}
+ 
+ .about-heading h2{
+ 	 background-color: #00BCD4;
+    padding: 10px;
+
+	text-align: center;
+	letter-spacing: 2px;
+	color: white;
+	font-family:cursive;
+	font-size: 20px;
+ }
+
+ .abody {
+ 	background-color: white;
+ }
+
+.about-img{
+  display: block;
+  margin-left: 33%;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.about-para p{
+	font-style: "robot", sans-serif;
+     text-align: center;
+     justify-content: center;
+}
+
+.about-para h2{
+	font-family: cursive;
+	font-size: 24px;
+	font-weight: bold, italic;
+	text-align: center;
+	justify-content: center;
+}

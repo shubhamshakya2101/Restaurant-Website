@@ -1,0 +1,54 @@
+		.wrapper img{
+			border-radius: 2%;
+			    box-shadow: 2px -2px 12px 1px #857878;
+			    transition: 0.6s ease ;
+			    overflow: hidden;
+		}
+		.wrapper img:hover{
+			opacity: 0.7;
+			background-color: white;
+			z-index: 2;
+
+		}
+
+
+	
+		 .wrapper > div{
+
+		 	padding: 0.5em;
+		 }
+
+		 .wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+
+  /*0.8fr 1.3fr 0.9fr 1fr 1fr 1fr;*/
+  grid-template-areas: "div1 div2 div3" "div1 div4 div3" "div5 div6 div8" "div5 div7 div8" "div9 div11 div12" "div10 div11 div13";
+}
+
+.div1 { grid-area: div1; }
+
+.div2 { grid-area: div2; }
+
+.div4 { grid-area: div4; }
+
+.div3 { grid-area: div3; }
+
+.div5 { grid-area: div5; }
+
+.div6 { grid-area: div6; }
+
+.div7 { grid-area: div7; }
+
+.div8 { grid-area: div8; }
+
+.div9 { grid-area: div9; }
+
+.div10 { grid-area: div10; }
+
+.div11 { grid-area: div11; }
+
+.div12 { grid-area: div12; }
+
+.div13 { grid-area: div13; }
